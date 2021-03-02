@@ -1,7 +1,7 @@
 ---
 title: Introduction
-teaching: 15
-exercises: null
+teaching: 10
+exercises: 5
 questions:
   - What is 'born open' data?
   - Why should data be 'born open'?
