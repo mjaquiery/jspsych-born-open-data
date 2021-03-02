@@ -1,20 +1,25 @@
 ---
 title: Introduction
 teaching: 15
-exercises: 3
+exercises: null
 questions:
-  - What are basic principles for using spreadsheets for good data organization?
+  - What is 'born open' data?
+  - Why should data be 'born open'?
 objectives:
-  - Understand how to organize data so computers can make the best use of the
-    data
+  - Understand how to access resources, ask for help, and give feedback.
+  - Understand what the workshop will contain.
 keypoints:
-  - Organizing your data tables according to tidy data principles will make them
-    easier for you and others to use for analysis.
+  - "'Born open' means that data are saved to a publicly-accessible location as
+    they are collected."
+  - "'Born open' data are accessed by the researcher who collects the data in
+    the same way that they are accessed by the public."
 day: 1
 order: 100000
 missingDependencies: []
 dependencies: []
 originalRepository: mjaquiery/ukrn-test-workshop
+summary: A friendly welcome to the workshop, a little bit of housekeeping, and
+  an overview of what we'll be doing.
 
 ---
 > ## Things You’ll Need To Complete This Tutorial
