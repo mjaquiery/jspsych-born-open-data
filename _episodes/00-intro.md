@@ -27,7 +27,7 @@ summary: A friendly welcome to the workshop, a little bit of housekeeping, and
 > This workshop focusses on implementing a born open workflow for jsPsych online experiments. 
 > Other kinds of online experiments will work well enough, but may take some time for us to help you implement.
 > Having a webserver capable of running PHP scripts will help in following the example section of the workshop.
-
+> 
 > If you do not have a webserver, install XAMPP using the instructions
 > in the on the [homepage]({{ "/" | relative_url }}).
 {: .prereq}
@@ -49,7 +49,7 @@ We will do our best to ensure that our data is in line with the [FAIR sharing pr
 >   - What was the experience like?
 {: .challenge}
 
-## Overview
+#### Overview
 
 First, we'll work through toy example where we adapt the [jsPsych quickstart project](https://github.com/mjaquiery/jsPsych-quickstart) to save data automatically to an OSF project component.
 We will cover:
