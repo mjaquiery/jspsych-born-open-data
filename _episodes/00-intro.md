@@ -23,101 +23,41 @@ summary: A friendly welcome to the workshop, a little bit of housekeeping, and
 
 ---
 > ## Things You’ll Need To Complete This Tutorial
-> #### Spreadsheet Software
-> To work through this tutorial you will need access to a spreadsheet program.
-> Many computers come with a pre-installed spreadsheet program like Excel. macOS users who use Apple’s Numbers application should note that it does not contain some of the features (particularly data validation) that we will be using. Please use LibreOffice or Microsoft Excel instead.
+> #### A Webserver or Website for Online Behavioural Experiements
+> This workshop focusses on implementing a born open workflow for jsPsych online experiments. 
+> Other kinds of online experiments will work well enough, but may take some time for us to help you implement.
+> Having a webserver capable of running PHP scripts will help in following the example section of the workshop.
 
-> If you do not have a spreadsheet program, install one using the instructions
-> in the link below.
-> * [Instructions to install a spreadsheet program.](../setup.html)
->
+> If you do not have a webserver, install XAMPP using the instructions
+> in the on the [homepage]({{ "/" | relative_url }}).
 {: .prereq}
 
-Good data organization is the foundation of your research
-project. Most researchers have data or do data entry in
-spreadsheets. Spreadsheet programs are very useful graphical
-interfaces for designing data tables and handling very basic data
-quality control functions.
+Today we will be implementing a 'born open' workflow for our data collection.
+This will mean that the data we collect will be saved into a publicly-accessible repository at the time we collect it, and when we want to access it we will do so in the same way that other researchers will.
+We will do our best to ensure that our data is in line with the [FAIR sharing principles](https://www.go-fair.org/fair-principles/):
+* **F**indable
+  * The data will be saved on the [OSF](https://osf.io/), where we can give them a DOI
+* **A**ccessible
+  * We will access our data using the same public OSF interface as everyone else
+* **I**nteroperable
+  * We will save data in .csv format so that it can be loaded by many different programs
+* and **R**eusable
+  * By giving our data an appropriate license, we will ensure people are clear about how the data can be used
 
-### Spreadsheet outline
-
-In this lesson, we’re going to talk about:
-
-- Good data entry practices - formatting data tables in spreadsheets
-- How to avoid common formatting mistakes
-- Recognising and reformatting dates in spreadsheets
-- Basic quality control and data manipulation in spreadsheets
-- Exporting data from spreadsheets
-
-### Spreadsheet programs
-
-Many spreadsheet programs are available. We will use Microsoft Excel in our examples.
-Although it is not open source software it is very widely available and used.
-
-Free spreadsheet programs such as LibreOffice are available.
-The functionality of these may differ from Excel, but in general they can be used to perform similar tasks.
-
-## Problems with Spreadsheets
-
-Spreadsheets are good for data entry,
-but in reality we tend to use spreadsheet programs for much more than data entry.
-We use them to create data tables for publications,
-to generate summary statistics,
-and make figures.
-Laying out spreadsheets in this way often adds some difficulty when we want
-to take our data from the spreadsheet and use it in another program.
-Additional white space, merged cells, colour and grids
-may aid readability but are not easily handled by other programs
-that take our spreadsheet as an input to further analysis.
-
-Generating statistics and figures in spreadsheets should be done with caution.
-The graphical, drag and drop nature of spreadsheet programs means that it can be very difficult, if not impossible, to replicate your steps (much less retrace anyone else’s).
-This is particularly true if your stats or figures require complex calculations.
-Furthermore, when performing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells.
-This often makes it difficult to demonstrate data quality and consistency in our analysis.
-
-Even when we are aware of some of the limitations that data in spreadsheets presents,
-often we have inherited spreadsheets from another colleague or data provider.
-In these situations we cannot exercise any control in its construction
-or entry of the data within it.
-Nevertheless it is important to be aware of the limitations these data may present, and know how to assess if any problems are present and how to overcome them.
-
-> ## What this lesson will not teach you
->
-> - How to do *statistics* in a spreadsheet
-> - How to do *plotting* in a spreadsheet
-> - How to *write code* in spreadsheet programs
->
-> If you're looking to do this, a good reference is
-> [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O'Reilly.
-{: .callout}
-
-> ## Exercise
-> - How many people have used spreadsheets in their research?
-> - How many people have accidentally done something that made them
-> frustrated or sad?
+> ## Discussion time
+> - Who has tried to use shared data before?
+>   - What was the experience like?
 {: .challenge}
 
+## Overview
 
-### Using Spreadsheets for Data Entry and Cleaning
+First, we'll work through toy example where we adapt the [jsPsych quickstart project](https://github.com/mjaquiery/jsPsych-quickstart) to save data automatically to an OSF project component.
+We will cover:
+* Setting up an OSF project component to house the data
+* Setting up an OSF Personal Access Token to authorise saving the data
+* Cloning or copying the jsPsych quickstart project
+* Adapting the participant-side file (index.html) to add a participant id and send data to the server
+* Creating a server-side file (save_data.php) to send the data to the OSF
 
-However, there are circumstances where you might want to use a spreadsheet
-program to produce “quick and dirty” calculations or figures, and some of
-these features can be used in data cleaning, prior to importation into a
-statistical analysis program. We will show you how to use some features of
-spreadsheet programs to check your data quality along the way and produce
-preliminary summary statistics.
-
-In this lesson, we will assume that you are most likely using Excel as
-your primary spreadsheet program - there are other programs with similar functionality but Excel seems
-to be the most commonly used.
-
-In this lesson we're going to talk about:
-
-1. [Formatting data tables in spreadsheets](../01-format-data/)
-2. [Formatting problems](../02-common-mistakes/)
-3. [Dates as data](../03-dates-as-data/)
-4. [Quality control](../04-quality-assurance/)
-5. [Exporting data](../05-exporting-data/)
-
-{% include links.md %}
+Later, we'll have a block of time for you to create a version of one of your current projects which saves to the OSF.
+We will be here to give you as much help as you need.
