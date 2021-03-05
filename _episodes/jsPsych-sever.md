@@ -1,5 +1,5 @@
 ---
-title: Participant-side data saving
+title: Server-side data saving
 teaching: 5
 exercises: 15
 questions: []
