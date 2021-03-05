@@ -57,8 +57,8 @@ We will cover:
 * Cloning or copying the jsPsych quickstart project
 * Setting up an OSF project component to house the data
 * Setting up an OSF Personal Access Token to authorise saving the data
-* Adapting the participant-side file (index.html) to add a participant id and send data to the server
-* Creating a server-side file (save_data.php) to send the data to the OSF
+* Adapting the participant-side file (`index.html`) to add a participant id and send data to the server
+* Creating a server-side file (`save_data.php`) to send the data to the OSF
 
 Later, we'll have a block of time for you to create a version of one of your current projects which saves to the OSF.
 We will be here to give you as much help as you need.
