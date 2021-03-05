@@ -1,5 +1,5 @@
 ---
-title: Setting up an OSF Data Component
+title: Generating an OSF Personal Access Token
 teaching: 5
 exercises: 5
 questions: []
