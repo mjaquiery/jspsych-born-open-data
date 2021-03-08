@@ -7,6 +7,7 @@ objectives:
   - Have a Personal Access Token you can use to authenticate data uploads
 keypoints:
   - A Personal Access Token (PAT) lets a program do things on your behalf.
+  - Make a note of your PAT - we'll need it later!
 day: 1
 order: 400000
 missingDependencies: []

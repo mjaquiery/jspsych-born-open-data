@@ -1,12 +1,13 @@
 ---
 title: Setting up an OSF Data Component
 teaching: 2
-exercises: 10
+exercises: 13
 questions: []
 objectives:
   - Have an OSF project component ready to house the data
 keypoints:
   - We use the _test_ subdomain of the OSF because we're testing things
+  - Make a note of the data component's id - we'll need that later!
 day: 1
 order: 300000
 missingDependencies: []
@@ -18,6 +19,7 @@ summary: We'll create a project and a data component on the OSF where we'll uplo
 
 > #### Note:
 > We'll be using the [test subdomain](https://test.osf.io/) of the OSF because we're testing things.
+{: .challenge}
 
 We'll be creating a new project on the Open Science Framework and adding a component which will house the data we upload.
 
@@ -45,4 +47,9 @@ You can find the id in the browser's address bar; it's the part that's highlight
 
 You're now all set up with an OSF project which has a special component ready to hold all the raw data.
 
+> ## DOIs and data citations
+> You can create a DOI for your data to make it easy to cite.
+> This is as simple as clicking the 'Create DOI' button and then confirming your choice.
+> ![OSF create DOI screenshot](../fig/osf-doi.jpg)
+{: .solution}
 

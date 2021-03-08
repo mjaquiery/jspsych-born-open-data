@@ -25,9 +25,9 @@ There are two ways of getting the files that we'll cover:
     * This is the easiest way, and means git is already set up on the project
 * Otherwise, you'll download the repository files as a .zip archive and extract it
 
-### Copying the Repository
+## Copying the Repository
 
-#### Copying a Template
+### Copying a Template
 
 1. Go to the repository page ([https://github.com/mjaquiery/jsPsych-quickstart](https://github.com/mjaquiery/jsPsych-quickstart))
 2. Click 'Use this template' in the top-right
@@ -42,7 +42,7 @@ Clone this repository by copying its clone URL (click "Code" then the copy icon)
     *
 6. Clone the repository by typing `git clone URL` where `URL` is the clone URL you copied in step 4.
 
-#### Downloading a .zip
+### Downloading a .zip
 
 1. Go to the repository page ([https://github.com/mjaquiery/jsPsych-quickstart](https://github.com/mjaquiery/jsPsych-quickstart))
 2. Click the 'Code' button, then the 'Download ZIP'
@@ -50,7 +50,7 @@ Clone this repository by copying its clone URL (click "Code" then the copy icon)
 3. Extract the files to your webserver root directory
 
 
-### Checking it works
+## Checking it works
 
 With the files now in place, the project should now be served with the local webserver.
 Check the webserver is running, then open a browser and navigate to [localhost/jsPsych-quickstart/index.html](http://localhost/jsPsych-quickstart/index.html).

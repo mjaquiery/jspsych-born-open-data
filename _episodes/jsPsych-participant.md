@@ -1,7 +1,7 @@
 ---
 title: Participant-side data saving
 teaching: 5
-exercises: 15
+exercises: 35
 questions: []
 objectives:
   - Organise participant experiment data and send it to the server.
@@ -77,15 +77,12 @@ First, we'll make sure we have jQuery loaded, because that will make uploading t
 Go to `index.html:5` (`index.html` `line 5`) and add some lines just below the `<title></title>` tags:
 
 ```html
+<!-- Include jQuery via Content Deployment Network. CDN embed tags for all jQuery version are listed at https://code.jquery.com/ -->
 <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
 ```
-
-> ## Tip
-> You can see the Content Deployment Network embed tags for all jQuery version at [code.jquery.com](https://code.jquery.com/)
-{: .solution}
 
 Now we're ready to change the `onFinish` function to send data to the server using AJAX (Asynchronous JavaScript And XML).
 Edit the `jsPsych.init(...)` bit of the script to resemble the below:

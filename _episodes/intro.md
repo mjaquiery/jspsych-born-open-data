@@ -1,7 +1,7 @@
 ---
 title: Introduction
 teaching: 10
-exercises: 5
+exercises: 20
 questions:
   - What is 'born open' data?
   - Why should data be 'born open'?
@@ -45,9 +45,14 @@ We will do our best to ensure that our data is in line with the [FAIR sharing pr
   * By giving our data an appropriate license, we will ensure people are clear about how the data can be used
   * By supplying a data dictionary which explains the variables, we will make it possible for others to understand our dataset
 
-> ## Discussion time
+> ## Discussion why share data? `10 min`
 > - Who has tried to use shared data before?
 >   - What was the experience like?
+> - Why might we want to share data?
+{: .challenge}
+
+> ## Discussion: concerns about sharing data `10 min`
+> - Why might people worry about having data 'born open'?
 {: .challenge}
 
 #### Overview
@@ -59,6 +64,7 @@ We will cover:
 * Setting up an OSF Personal Access Token to authorise saving the data
 * Adapting the participant-side file (`index.html`) to add a participant id and send data to the server
 * Creating a server-side file (`save_data.php`) to send the data to the OSF
+* Fetching the data
 
 Later, we'll have a block of time for you to create a version of one of your current projects which saves to the OSF.
 We will be here to give you as much help as you need.

@@ -1,7 +1,7 @@
 ---
 title: Server-side data saving
 teaching: 5
-exercises: 15
+exercises: 20
 questions: []
 objectives:
   - Handle participant data sent to the server, and save it to the OSF.
@@ -46,7 +46,14 @@ Paste the code below into the file:
 > // This may need changing if you don't use Frankfurt (DE) for your data storage
 > $url = "https://files.de-1.test.osf.io/v1/resources/$WHERE_TO_SAVE/providers/osfstorage/?kind=file&name=$participant_id.csv";
 >
-> // cURL example adapted from https://stackoverflow.com/a/5676572
+> /*
+>  * The cURL request below is adapted from https://stackoverflow.com/a/5676572
+>  * We create a request to the $url above, with the following key properties:
+>  * - PUT method (because we're creating a file)
+>  * - Authorization header with the token
+>  * - Body content of the file we want to create
+>  */
+>
 > // open connection
 > $ch = curl_init();
 >
