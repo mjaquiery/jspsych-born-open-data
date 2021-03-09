@@ -36,7 +36,7 @@ Now you've created an RStudio Cloud account, you can clone the example OSFr proj
    * Wait while the project loads
 
 To execute the project, we need to install the packages it depends on.
-Because the project uses the `renv` package to manage packages, we can install all the required packages by entering `renv::restore()` in the console and pressing `[ENTER]`.
+Because the project uses the `renv` package to manage packages, we can install all the required packages by entering `renv::restore()` in the console and pressing <kbd>Enter</kbd>.
 It will take a little while for the packages to install.
 ![RStudio Cloud renv::restore() screenshot](../fig/rstudio-restore-open.jpg)
 We then click on `download_data.R` to open that file.
