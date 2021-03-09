@@ -77,6 +77,7 @@ Paste the code below into the file:
 > // Inform the participant that we saved the data successfully
 > echo $result;
 > ```
+> {: .source}
 {: .solution}
 
 Notice at the top of the file we `include('secrets.php')`.

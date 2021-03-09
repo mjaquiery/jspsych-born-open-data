@@ -70,6 +70,7 @@ We may as well put it right up the top of our `<script></script>` section, on `l
 > // Add the property to the data for all trials
 > jsPsych.data.addProperties({participant_id});
 > ```
+> {: .source}
 {: .solution}
 
 Finally, we want to send data to the server when we're finished rather than simply showing it to the participant.
@@ -83,6 +84,7 @@ Go to `index.html:5` (`index.html` `line 5`) and add some lines just below the `
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
 ```
+{: .source}
 
 Now we're ready to change the `onFinish` function to send data to the server using AJAX (Asynchronous JavaScript And XML).
 Edit the `jsPsych.init(...)` bit of the script to resemble the below:
@@ -118,6 +120,7 @@ jsPsych.init({
     }
 });
 ```
+{: .source}
 
 We're now ready.
 If we try the experiment now, we should find that it tells us that there was a problem uploading data to the OSF.
