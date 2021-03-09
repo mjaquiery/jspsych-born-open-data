@@ -7,7 +7,7 @@ instructor_emails:
   - matt.jaquiery@psy.ox.ac.uk
 helpers: []
 start_times:
-  - 10|00
+  - 09|00
 setup_files:
   - editor
   - videoconferencing
