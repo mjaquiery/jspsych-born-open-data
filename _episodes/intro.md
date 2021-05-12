@@ -32,6 +32,8 @@ summary: A friendly welcome to the workshop, a little bit of housekeeping, and
 > in the on the [homepage]({{ "/" | relative_url }}).
 {: .prereq}
 
+![Schematic of the server-participant-server-OSF data flow](../fig/schematic.jpg)
+
 Today we will be implementing a 'born open' workflow for our data collection.
 This will mean that the data we collect will be saved into a publicly-accessible repository at the time we collect it, and when we want to access it we will do so in the same way that other researchers will.
 We will do our best to ensure that our data is in line with the [FAIR sharing principles](https://www.go-fair.org/fair-principles/):
